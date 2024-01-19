@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<title> Registration form </title>
+<style>
+h1{
+color:orange;
+font-size:50px;
+}
+</style>
+</head>
+<body >
+<script>
+function check(){
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var num=document.getElementById("num").value;
+var course=document.getElementById("course").value;
+var pwd=document.getElementById("pwd").value;
+var cpwd=document.getElementById("cpwd").value;
+if(name=="")
+{
+alert("please enter your name");
+}
+if(pwd.length<=6)
+{
+alert("password only 6 characters allowed");
+}
+else if(cpwd.length<=6)
+{
+alert("password only 6 characters allowed");
+}
+if (isNaN(num)){  
+  
+  return false;  
+}
+else{  
+  return true;  
+  }  
+if(pwd == cpwd){  
+return true;  
+}  
+else{  
+alert("password must be same!");  
+return false;  
+}
+if(x=="The Freelance Masterclass: For Creatives")
+{
+document.write("price ----> Rs 20000");
+}
+else if(course=="Become a Digital Marketing Professional: Freelance Career")
+{
+document.write("price ----> Rs 30000");
+}
+else if(course=="Learn SAP Course: Online for Beginners")
+{
+document.write("price ----> Rs 40000");
+}
+else if(course=="The Complete Ethical Hacking Course: Beginner to Advanced")
+{
+document.write("price ----> Rs 500000");
+}
+else if(course=="PMP Exam Prep Seminar: Pass the PMP on Your First Attempt")
+{
+document.write("price ----> Rs 25000");
+}
+else if(course=="Becoming a Freelance Web Developer: The Complete Guide")
+{
+document.write("price ----> Rs 35000");
+}
+else if(course=="Complete Data Analysis Course for Absolute Beginners")
+{
+document.write("price ----> Rs 45000");
+}
+}
+</script>
+<center style="background-color:#696969;height:100px">
+<h2 style="font-size:30px">Welcome to registration page</h2>
+</center>
+<h1>List of courses:</h1>
+<ul type="circle">
+<li >The Freelance Masterclass: For Creatives</li>
+<li >Become a Digital Marketing Professional: Freelance Career</li>
+<li>Learn SAP Course: Online for Beginners</li>
+<li >The Complete Ethical Hacking Course: Beginner to Advanced</li>
+<li >PMP Exam Prep Seminar: Pass the PMP on Your First Attempt</li>
+<li >Becoming a Freelance Web Developer: The Complete Guide</li>
+<li id="l7">Success and Freelancing: A Complete Freelancer Guide</li>
+<li id="l8">Complete Data Analysis Course for Absolute Beginners</li>
+</ul>
+<h1>Registration form:</h1>
+<form action="../../../../Working%20files/JATIN%20MALLARAPU%20%2020BCI7071/LAB%206%20Static%20Web%20Site/Registration.html" method="get">
+<table  border="2px" width="300px" height="100px">
+<tr>
+<td>Name:</td>
+<td><input type="text" id="name"></td>
+</tr>
+<tr>
+<td>email:</td>
+<td><input type="email" id="email"></td>
+</tr>
+<tr>
+<td>Phone no:</td>
+<td><input type="number" id="num"></td>
+</tr>
+<tr>
+<td>Course Name:</td>
+<td><input type="text" id="course"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" id="pwd"></td>
+</tr>
+<tr>
+<td>Confirm Password:</td>
+<td><input type="password" id="cpwd"></td>
+</tr>
+</table>
+<input type="submit" onclick="check()" >
+</form>
+<div style="background-color:brown">
+<h1>Contact us page</h1>
+<a href="../../../../Working%20files/JATIN%20MALLARAPU%20%2020BCI7071/LAB%206%20Static%20Web%20Site/Contact.html" style="font-size:20px">Link</a>
+</div>
+</body>
+</html>
